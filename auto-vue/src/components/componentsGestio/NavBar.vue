@@ -47,6 +47,7 @@ const navigateTo = (path) => {
     text-decoration: none;
     color: rgb(62, 62, 175); 
     transition: 0.3s;
+    margin-right: 10px;
     
 }
 
