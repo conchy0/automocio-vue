@@ -1,11 +1,14 @@
+<script>
+    import '@vueup/vue-quill/dist/vue-quill.snow.css';
+</script> 
+    
+    
 <template>
-    <h1>Agenda</h1>
-    </template>
+    <QuillEditor theme="snow" />
+</template>
     
-    <script>
     
-    </script>
-    <style>
+<style>
     
-    </style>
+</style>
     

@@ -1,12 +1,13 @@
 <script setup>
 import { ref } from 'vue'
 import NavBar from './components/componentsGestio/NavBar.vue';
-import HomeView from './views/HomeView.vue';
+import Home from './views/HomeView.vue';
+import router from './router';
 </script>
 
 <template>
     <NavBar />
-    <HomeView />
+    <router-view />
 </template>
 
 <style scoped>
