@@ -49,7 +49,7 @@ const toggleMenu = () => {
     align-items: center;
     justify-content: space-between;
     background-color: transparent;
-    padding: 10px 13%;
+    padding: 20px 10%;
     user-select: none;
     position: relative;
 }
