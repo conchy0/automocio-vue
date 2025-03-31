@@ -5,6 +5,7 @@ import Hackato from '../views/Hackato.vue';
 import Actualitat from '../views/Actualitat.vue';
 import Lloc from '../views/Lloc.vue';
 
+
 const routes = [
     { path: '/', name: 'Home', component: Home },
     { path: '/agenda', name: 'Agenda', component: Agenda },
@@ -12,6 +13,7 @@ const routes = [
     { path: '/actualitat', name: 'Actualitat', component: Actualitat },
     { path: '/lloc', name: 'Lloc', component: Lloc },
 ];
+
 
 const router = createRouter({
     history: createWebHistory(),
