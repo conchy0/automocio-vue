@@ -1,13 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import HomeView from '../views/HomeView.vue';
-import AgendaView from '../views/AgendaView.vue';
+import Home from '../views/HomeView.vue';
+import Agenda from '../views/AgendaView.vue';
 import Hackato from '../views/Hackato.vue';
 import Actualitat from '../views/Actualitat.vue';
 import Lloc from '../views/Lloc.vue';
 
 const routes = [
-    { path: '/', name: 'Home', component: HomeView },
-    { path: '/agenda', name: 'Agenda', component: AgendaView },
+    { path: '/', name: 'Home', component: Home },
+    { path: '/agenda', name: 'Agenda', component: Agenda },
     { path: '/hackato', name: 'Hackato', component: Hackato },
     { path: '/actualitat', name: 'Actualitat', component: Actualitat },
     { path: '/lloc', name: 'Lloc', component: Lloc },

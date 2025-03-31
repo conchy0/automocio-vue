@@ -2,6 +2,7 @@
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 
+
 const router = useRouter();
 
 const navigateTo = (path) => {
@@ -13,13 +14,13 @@ const navigateTo = (path) => {
     <nav class="navbar">
         <img src="/logo.png" alt="Logo" class="logo">
         <ul class="nav-links">
-            <li><a href="/" @click.prevent="navigateTo('/')">Inici</a></li>
-            <li><a href="/agenda" @click.prevent="navigateTo('/agenda')">Agenda</a></li>
-            <li><a href="/hackato" @click.prevent="navigateTo('/hackato')">Hackato</a></li>
-            <li><a href="/actualitat" @click.prevent="navigateTo('/actualitat')">Actualitat</a></li>
-            <li><a href="/lloc" @click.prevent="navigateTo('/lloc')">Lloc</a></li>
+            <li><RouterLink to="/">Inici</RouterLink></li>
+            <li><RouterLink to="/agenda">Agenda</RouterLink></li>
+            <li><RouterLink to="/hackato">Hackato</RouterLink></li>
+            <li><RouterLink to="/actualitat">Actualitat</RouterLink></li>
+            <li><RouterLink to="/lloc">Lloc</RouterLink></li>
         </ul>
-        <button class="login-button" @click.prevent="navigateTo('/login')">Iniciar Sessio</button>
+        <RouterLink to="/" class="login-button">Iniciar Sessio</RouterLink>
     </nav>
 </template>
 
@@ -46,7 +47,6 @@ const navigateTo = (path) => {
 .nav-links a {
     text-decoration: none;
     color: rgb(62, 62, 175); 
-    transition: 0.3s;
     margin-right: 10px;
     
 }
