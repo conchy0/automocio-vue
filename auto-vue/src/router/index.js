@@ -4,6 +4,8 @@ import Agenda from '../views/AgendaView.vue';
 import Hackato from '../views/Hackato.vue';
 import Actualitat from '../views/Actualitat.vue';
 import Lloc from '../views/Lloc.vue';
+import login from '../views/Login.vue';
+import register from '../views/Register.vue';
 
 
 const routes = [
@@ -12,6 +14,8 @@ const routes = [
     { path: '/hackato', name: 'Hackato', component: Hackato },
     { path: '/actualitat', name: 'Actualitat', component: Actualitat },
     { path: '/lloc', name: 'Lloc', component: Lloc },
+    { path: '/login', name: 'Login', component: login },
+    { path: '/register', name: 'Register', component: register },
 ];
 
 
