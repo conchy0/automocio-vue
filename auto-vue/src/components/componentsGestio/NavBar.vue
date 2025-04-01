@@ -30,6 +30,7 @@
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 
+
 const router = useRouter();
 const isMenuOpen = ref(false);
 
@@ -116,7 +117,7 @@ const toggleMenu = () => {
 }
 
 .desktop-login {
-    background-color: rgb(48, 48, 234);
+    background-color: #1976d2;
     border: none;
     border-radius: 20px;
     padding: 8px 25px;
