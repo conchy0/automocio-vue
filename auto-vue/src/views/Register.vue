@@ -61,10 +61,12 @@ export default {
         <label for="confirm-password">Confirmar Contrasenya</label>
         <input type="password" id="confirm-password" v-model="confirmPassword" required />
       </div>
-      <Checkbox v-model="checked" :invalid="!checked"  binary />
+
       <div class="terms">
+        <Checkbox v-model="checked" :invalid="!checked" binary />
         <p>Accepto la <a href="#">Política de Privacitat</a></p>
       </div>
+
       <button type="submit" class="register-button">Registrar-se</button>
     </form>
   </div>
@@ -73,7 +75,7 @@ export default {
 
 <style scoped>
 .register-container {
-  max-width: 400px;
+  max-width: 500px;
   margin: 50px auto;
   padding: 50px;
   border: 1px solid #ccc;
@@ -117,7 +119,7 @@ input:focus {
 .register-button {
   width: 50%;
   padding: 10px;
-  margin-top: 20px;
+  margin-top: 40px;
   background-color:#1976d2;
   border: none;
   border-radius: 5px;
@@ -129,5 +131,25 @@ input:focus {
 
 .register-button:hover {
   background-color: rgb(36, 36, 118);
+}
+.terms {
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+  margin-top: 10px;
+}
+
+.terms p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.terms a {
+  color: #1976d2;
+  text-decoration: none;
+}
+
+.terms a:hover {
+  text-decoration: underline;
 }
 </style>

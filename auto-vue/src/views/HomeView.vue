@@ -36,6 +36,7 @@ export default {
     margin-left: 10%;
     display: flex;
     flex-direction: column;
+    
 }
 
 .confirm-btn {

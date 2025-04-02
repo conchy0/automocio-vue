@@ -47,7 +47,7 @@ const handleLogin = () => {
 
 <style scoped>
 .login-container {
-  max-width: 400px;
+  max-width: 500px;
   margin: 50px auto;
   padding: 50px;
   border: 1px solid #ccc;
