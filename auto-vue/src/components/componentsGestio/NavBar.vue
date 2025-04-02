@@ -87,7 +87,7 @@ const toggleMenu = () => {
 
 .nav-links a:hover {
     font-weight: bold;
-    color: rgb(14, 14, 198);
+    color: #1976d2;
 }
 
 .login-button {
@@ -128,7 +128,7 @@ const toggleMenu = () => {
 }
 
 .desktop-login:hover {
-    background-color: rgb(36, 36, 118);
+    background-color: rgb(54, 54, 201);
     transform: scale(1.05);
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
 }
