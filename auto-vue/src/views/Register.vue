@@ -1,19 +1,26 @@
 <script>
 import { ref } from 'vue';
 import { toast } from 'vue3-toastify';
-
-
+import Checkbox from 'primevue/checkbox';
 
 export default {
+  components: {
+    Checkbox,
+  },
   setup() {
     const username = ref('');
     const email = ref('');
     const password = ref('');
     const confirmPassword = ref('');
+    const checked = ref(false); 
 
     const handleRegister = () => {
         if (password.value !== confirmPassword.value) {
             toast.error('La contrasenya no coincideix', { position: 'top-center' });
+            return;
+        }
+        if (!checked.value) { 
+            toast.warning('Accepta la Política de Privacitat', { position: 'top-center' });
             return;
         }
         toast.success('Registre fet amb èxit', { position: 'top-center' });
@@ -27,6 +34,7 @@ export default {
       email,
       password,
       confirmPassword,
+      checked,
       handleRegister
     };
   }
@@ -38,49 +46,30 @@ export default {
     <h1>Registrat</h1>
     <form @submit.prevent="handleRegister">
       <div class="form-group">
-        <label for="username">Nom de Usuari</label>
-        <input
-          type="text"
-          id="username"
-          v-model="username"
-          placeholder="Entra el teu nom d'usuari"
-          required
-        />
+        <label for="username">Nom d'Usuari</label>
+        <input type="text" id="username" v-model="username" required />
       </div>
       <div class="form-group">
-        <label for="email">Correu Electrónic</label>
-        <input
-          type="email"
-          id="email"
-          v-model="email"
-          placeholder="Entra el teu correu electrònic"
-          required
-        />
+        <label for="email">Correu Electrònic</label>
+        <input type="email" id="email" v-model="email" required />
       </div>
       <div class="form-group">
-        <label for="password">Contrassenya</label>
-        <input
-          type="password"
-          id="password"
-          v-model="password"
-          placeholder="Entra la teva contrassenya"
-          required
-        />
+        <label for="password">Contrasenya</label>
+        <input type="password" id="password" v-model="password" required />
       </div>
       <div class="form-group">
-        <label for="confirm-password">Confirmar Contrassenya</label>
-        <input
-          type="password"
-          id="confirm-password"
-          v-model="confirmPassword"
-          placeholder="Confirma la teva contrassenya"
-          required
-        />
+        <label for="confirm-password">Confirmar Contrasenya</label>
+        <input type="password" id="confirm-password" v-model="confirmPassword" required />
       </div>
-      <button type="submit" class="register-button">Registrarse</button>
+      <Checkbox v-model="checked" :invalid="!checked"  binary />
+      <div class="terms">
+        <p>Accepto la <a href="#">Política de Privacitat</a></p>
+      </div>
+      <button type="submit" class="register-button">Registrar-se</button>
     </form>
   </div>
 </template>
+
 
 <style scoped>
 .register-container {
@@ -93,7 +82,6 @@ export default {
   background-color: #fff;
   text-align: center;
 }
-
 h1 {
   margin-bottom: 20px;
   font-size: 24px;
@@ -122,7 +110,7 @@ input {
 
 input:focus {
   outline: none;
-  border-color: #007bff;
+  border-color: #1976d2;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
@@ -130,7 +118,7 @@ input:focus {
   width: 50%;
   padding: 10px;
   margin-top: 20px;
-  background-color: rgb(48, 48, 234);
+  background-color:#1976d2;
   border: none;
   border-radius: 5px;
   color: #fff;

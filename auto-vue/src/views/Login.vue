@@ -1,10 +1,12 @@
 <script setup>
 import { ref } from 'vue';
+import { toast } from 'vue3-toastify';
 
 const email = ref('');
 const password = ref('');
 
 const handleLogin = () => {
+    toast.success('Registre fet amb èxit', { position: 'top-center' });
   console.log('Email:', email.value);
   console.log('Password:', password.value);
 };
@@ -83,7 +85,7 @@ input {
 
 input:focus {
   outline: none;
-  border-color: #007bff;
+  border-color: #1976d2;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
@@ -91,7 +93,7 @@ input:focus {
   width: 50%;
   padding: 10px;
   margin-top: 50px;
-  background-color: rgb(48, 48, 234);
+  background-color: #1976d2;
   border: none;
   border-radius: 5px;
   color: #fff;

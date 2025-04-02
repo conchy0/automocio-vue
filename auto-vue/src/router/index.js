@@ -6,6 +6,7 @@ import Actualitat from '../views/Actualitat.vue';
 import Lloc from '../views/Lloc.vue';
 import login from '../views/Login.vue';
 import register from '../views/Register.vue';
+import usuari from '../views/Usuaris.vue';
 
 
 const routes = [
@@ -16,6 +17,7 @@ const routes = [
     { path: '/lloc', name: 'Lloc', component: Lloc },
     { path: '/login', name: 'Login', component: login },
     { path: '/register', name: 'Register', component: register },
+    { path: '/usuari', name: 'Usuari', component: usuari },
 ];
 
 
