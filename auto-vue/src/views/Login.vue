@@ -92,7 +92,7 @@ input:focus {
 .login-button {
   width: 50%;
   padding: 10px;
-  margin-top: 50px;
+  margin-top: 10vh;
   background-color: #1976d2;
   border: none;
   border-radius: 5px;

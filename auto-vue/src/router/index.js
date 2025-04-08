@@ -7,6 +7,7 @@ import Lloc from '../views/Lloc.vue';
 import login from '../views/Login.vue';
 import register from '../views/Register.vue';
 import usuari from '../views/Usuaris.vue';
+import formulari from '../views/Formulari.vue';
 
 
 const routes = [
@@ -18,6 +19,7 @@ const routes = [
     { path: '/login', name: 'Login', component: login },
     { path: '/register', name: 'Register', component: register },
     { path: '/usuari', name: 'Usuari', component: usuari },
+    { path: '/formulari', name: 'Formulari', component: formulari },
 ];
 
 

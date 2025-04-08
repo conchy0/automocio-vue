@@ -1,22 +1,22 @@
 <template>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <footer class="footer">
       <div class="footer-container">
-        <div class="footer-section institut-name">
-          <p>Institut Montilivi</p>
-        </div>
-                
-        <div class="footer-section footer-info">
-          <p>Av.Montilivi,125</p>
-          <p>17003 Girona(Girona)</p>
-          <p>+34 972 20 94 58</p>
-          <p>institutmontilivi@xtec.cat</p>
-          <p><a href="https://www.institutmontilivi.cat" target="_blank">www.institutmontilivi.cat</a></p>
+        <div class="footer-section">
+          <a href="https://www.institutmontilivi.cat/"><p class="title">Institut Montilivi</p></a>
         </div>
         
-        <div class="footer-section social-icons">
-          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
-          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <div class="footer-info">
+          <p>Av. Montilivi, 125</p>
+          <p>17003 Girona (Girona)</p>
+          <p>Tel.: 972209458</p>
+          <p>Fax: 972209069</p>
+          <p>Mail: <a href="mailto:institutmontilivi@xtec.cat">institutmontilivi@xtec.cat</a></p>
+        </div>
+        
+        <div class="social-icons">
+          <a href="https://www.youtube.com/watch?v=wzgkl4baJb4" class="social-icon"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.instagram.com/automociomontilivi/" class="social-icon"><i class="fab fa-instagram"></i></a>
           <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
         </div>
       </div>
@@ -28,38 +28,37 @@
   
   <style scoped>
   .footer {
-    background-color: #1976d2; 
+    background-color: #1976d2;;
     color: white;
-    padding: 20px 0;
-    width: 100%;
-    box-sizing: border-box;
-    margin-top: auto;
+    padding: 10px 0;
+    text-align: center;
   }
   .footer-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-align: center;
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
   }
-  .footer-section {
-    flex: 1;
+  .footer-section .title {
+    font-weight: bold;
+    font-size: 18px;
   }
   .footer-info p {
-    margin: 5px 0;
+    margin: 3px 0;
     font-size: 14px;
   }
   .footer-info a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
   }
   .footer-info a:hover {
     text-decoration: underline;
   }
   .social-icons {
     display: flex;
-    gap: 10px;
+    gap: 15px;
   }
   .social-icon {
     color: white;
@@ -69,6 +68,11 @@
   .social-icon:hover {
     opacity: 0.8;
   }
+  .title{
+    color: white;
+  }
+  a {
+  text-decoration: none;         
+}
   </style>
-  
   
